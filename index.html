@@ -7,14 +7,17 @@
     <meta name="description" content="Portfolio Landing Page">
     <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <title>Portfolio Landing Page</title>
 </head>
 
 <body>
-    <main>
+    <main class="bg-gray-900">
         <header>
             <nav
-                class="flex items-center justify-between px-6 py-4 sticky top-0 z-[999] bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] shadow-[0_10px_30px_rgba(255,255,255,0.8)]">
+                class="flex items-center justify-between px-4 py-3 sticky top-0 z-[999] 
+                bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] 
+                shadow-[0_10px_30px_rgba(255,255,255,0.8)]">
 
                 <!-- Logo -->
                 <div class="flex items-center gap-2">
@@ -23,24 +26,9 @@
                     </h1>
                 </div>
 
-                <!-- Navigation Links -->
-                <div id="links" class="hidden md:flex gap-8 items-center text-[1.1rem]">
-                    <a href="#projects"
-                        class="px-3 py-2 rounded-md font-medium text-white transition duration-300 hover:bg-cyan-300 hover:text-gray-900">
-                        Projects
-                    </a>
-                    <a href="#tech-section"
-                        class="px-3 py-2 rounded-md font-medium text-white transition duration-300 hover:bg-cyan-300 hover:text-gray-900">
-                        Technologies / Skills
-                    </a>
-                    <a href="#footer"
-                        class="px-3 py-2 rounded-md font-medium text-white transition duration-300 hover:bg-cyan-300 hover:text-gray-900">
-                        Contact
-                    </a>
-                </div>
 
                 <!-- Reference Links -->
-                <div class="hidden md:flex items-center gap-5">
+                <div class=" flex items-center gap-5">
                     <a href="https://github.com/devByWaleed/" target="_blank" aria-label="GitHub Profile"
                         class="text-xl text-white transition duration-300 hover:text-cyan-300">
                         <i class="bi bi-github"></i>
@@ -49,20 +37,129 @@
                         class="text-xl text-white transition duration-300 hover:text-cyan-300">
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    <a href="https://leetcode.com/solveWithWaleed" aria-label="LeetCode Profile"
+                    <a href="https://leetcode.com/solveWithWaleed" target="_blank" aria-label="LeetCode Profile"
                         class="text-xl text-white transition duration-300 hover:text-cyan-300">
                         <span class="iconify" data-icon="simple-icons:leetcode"></span>
                     </a>
                 </div>
-
-                <!-- Hamburger Menu Button (Mobile) -->
-                <button class="md:hidden text-2xl text-white transition duration-300 hover:text-cyan-300"
-                    aria-label="Toggle menu" onclick="myFunction()">
-                    <i class="bi bi-list"></i>
-                </button>
             </nav>
-
         </header>
+
+
+        <!-- Hero Section -->
+        <section class="h-[75vh] flex flex-col justify-center items-center gap-y-2 text-center  text-white px-6">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Waleed 👋</h2>
+            <p class="text-lg md:text-2xl text-gray-300 mb-6">
+                A passionate <span class="text-cyan-400">Web Developer</span> & <span class="text-cyan-400">Problem
+                    Solver</span>
+            </p>
+            <!-- <a href="#projects"
+                class="px-6 py-3 bg-cyan-400 text-gray-900 font-semibold rounded-lg shadow-lg hover:bg-cyan-300 transition">
+                View My Work
+            </a> -->
+        </section>
+        <!-- Hero Section -->
+
+
+        <!-- Buttons For Section Naviagation -->
+        <section class="flex gap-x-6 w-fit  m-auto">
+            <button class="p-4 rounded-full text-white bg-[#171111] animate-bounce hover:animate-none" onclick="alert('hello left')"><i class="bi bi-caret-left-fill"></i></button>
+            <button class="p-4 rounded-full text-white bg-[#171111] animate-bounce hover:animate-none" onclick="alert('hello right')"><i class="bi bi-caret-right-fill"></i></button>
+        </section>
+        <!-- Buttons For Section Naviagation -->
+
+
+        <!-- Projects Section -->
+        <!-- <section id="projects">
+            <header>
+                <h1 class="section-title animate">Projects</h1>
+                <p class="section-subtitle animate">Here are some of my frontend projects</p>
+            </header>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <img src="assets/design.webp" alt="E-commerce Design" height="160">
+                    <div class="project-info">
+                        <h2 class="project-title">E-commerce Design</h2>
+                        <p class="project-tech">HTML / CSS / JS</p>
+                        <p class="description">A Responsive design made from Figma.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/devByWaleed/ecommerce-frontend-design/" target="_blank"
+                                aria-label="View source code for E-commerce Design"><i class="bi bi-code-slash"></i></a>
+                            <a href="https://devByWaleed.github.io/ecommerce-frontend-design/" target="_blank"
+                                aria-label="View live demo of E-commerce Design"><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/lms.webp" alt="Login Page" height="160">
+                    <div class="project-info">
+                        <h2 class="project-title">LMS Login Page</h2>
+                        <p class="project-tech">HTML / Tailwind CSS</p>
+                        <p class="description">A Responsive clone of Virtual University LMS Login page.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/devByWaleed/lms-clone/" target="_blank"
+                                aria-label="View source code for LMS Login Page"><i class="bi bi-code-slash"></i></a>
+                            <a href="https://devByWaleed.github.io/lms-clone/" target="_blank"
+                                aria-label="View live demo of LMS Login Page"><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            
+
+                <article class="project-card">
+                    <img src="assets/quiz.webp" alt="Quiz App" height="160">
+                    <div class="project-info">
+                        <h2 class="project-title">IQ Quiz App</h2>
+                        <p class="project-tech">Tailwind CSS / React JS</p>
+                        <p class="description">A Responsive Quiz App, comprising IQ Questions to check your
+                            logical reasoning
+                            and IQ.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/devByWaleed/quiz-app/" target="_blank"
+                                aria-label="View source code for Quiz App"><i class="bi bi-code-slash"></i></a>
+                            <a href="https://devByWaleed.github.io/quiz-app/" target="_blank"
+                                aria-label="View live demo of Quiz App"><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            
+
+            </div>
+        </section> -->
+        <!-- Projects Section -->
+
+
+        <!-- Technologies / Skills Section -->
+        <!-- <section id="tech-section" class="py-20 bg-gray-900 text-white">
+            <div class="max-w-5xl mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-12">⚡ Technologies / Skills</h2>
+                <div class="flex flex-wrap justify-center gap-6 text-lg">
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">HTML</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">CSS</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">JavaScript</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">React</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Tailwind CSS</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-lg">Python</span>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Contact Section -->
+        <!-- <section id="footer" class="py-20 bg-gray-100 text-gray-900">
+            <div class="max-w-4xl mx-auto text-center px-6">
+                <h2 class="text-3xl font-bold mb-6">📬 Contact Me</h2>
+                <p class="text-lg mb-6">Interested in working together? Let's connect! and build amazing</p>
+                <a href="mailto:your-email@example.com"
+                    class="px-6 py-3 bg-cyan-400 text-gray-900 font-semibold rounded-lg shadow-lg hover:bg-cyan-300 transition">
+                    Send Email
+                </a>
+            </div>
+        </section> -->
 
         <!-- 
         Projects
@@ -75,17 +172,26 @@ Contact
         <!-- Footer Section -->
         <footer class="p-2 text-center fixed bottom-0 w-full
         bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] 
-        text-white">
-            Copyright © <span id="current-year"></span>
+        text-white shadow-[0_10px_30px_rgba(255,255,255,0.8)]">
+            Copyright © <span id="current-year"></span> Waleed Ahmed
         </footer>
         <!-- Footer Section -->
     </main>
 
     <script>
+        // Toggle responsive navbar menu
+        function myFunction() {
+            const links = document.getElementById("links");
+            if (links.classList.contains("responsive")) {
+                links.classList.remove("responsive");
+            } else {
+                links.classList.add("responsive");
+            }
+        }
+
         // Logic For Updating Year Dynamically
         const currentDate = new Date();
         const currentYear = currentDate.getFullYear();
-
         document.querySelector("#current-year").textContent = currentYear;
     </script>
 </body>
