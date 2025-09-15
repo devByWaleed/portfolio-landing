@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+/* @tailwind utilities; */
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-8px);
+}
