@@ -1,7 +1,18 @@
 @import "tailwindcss";
 
-/* @tailwind utilities; */
+/* Hide scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
 
+
+/* Shadow */
+.shaddow-effect {
+    box-shadow: 0 6px 15px #00d8ff;
+}
+
+
+/* Hover Transition */
 .hover-effect {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
