@@ -47,27 +47,107 @@
 
 
         <!-- Hero Section -->
-        <section
-            class="flex-1 flex flex-col items-center justify-center p-7 border-2 border-amber-700  text-white px-6">
+        <section id="home"
+            class="flex-1 flex flex-col items-center justify-center p-7   text-white px-6">
+            <!-- <div class="absolute left-0 top-0 
+              w-1/2 h-2/3 
+              rounded-tl-[8px] rounded-bl-[8px] 
+              bg-[#237CFF] 
+              [clip-path:polygon(0_0,90%_0,100%_100%,0_100%)] 
+              z-10">
+            </div> -->
+
             <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Waleed 👋</h2>
             <p class="text-lg md:text-2xl text-gray-300 mb-6">
-                A passionate <span class="text-cyan-400">Web Developer</span> & <span class="text-cyan-400">Problem
-                    Solver</span>
+                A passionate <span id="typing" class="text-cyan-400"></span>
             </p>
-            <a href="#projects"
+            <!-- <a href="#projects"
                 class="px-6 py-3 bg-cyan-400 text-gray-900 font-semibold rounded-lg shadow-lg hover:bg-cyan-300 transition">
-                View My Work
-            </a>
+                Scroll to view more
+            </a> -->
         </section>
         <!-- Hero Section -->
 
 
+
+        <!-- Projects Section -->
+        <section id="projects"
+            class="flex-1 flex flex-col items-center justify-center p-7  bg-gray-100 text-gray-900">
+
+            <div class="max-w-5xl w-full p-3">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">🚀 Projects</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Project Card -->
+                    <div class="hover-effect bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <h3 class="text-lg md:text-xl font-semibold mb-2">Yt Transcript App</h3>
+                        <p class="text-gray-600 mb-4">A full-stack responsive web app with Translate & Search features.
+                        </p>
+                        <a href="https://github.com/devByWaleed/transcript-app"
+                            class="text-cyan-500 font-medium hover:underline">View Project →</a>
+                    </div>
+
+                    <div class="hover-effect bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <h3 class="text-lg md:text-xl font-semibold mb-2">IQ Quiz App</h3>
+                        <p class="text-gray-600 mb-4">Frontend based web app with IQ questions.</p>
+                        <a href="https://github.com/devByWaleed/quiz-app"
+                            class="text-cyan-500 font-medium hover:underline">View
+                            Project →</a>
+                    </div>
+
+                    <div class="hover-effect bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                        <h3 class="text-lg md:text-xl font-semibold mb-2">Notepad App</h3>
+                        <p class="text-gray-600 mb-4">A Local-Storage based app with full CRUD operations.</p>
+                        <a href="https://github.com/devByWaleed/js-notepad"
+                            class="text-cyan-500 font-medium hover:underline">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+
+
+
+        <!-- Technologies / Skills Section -->
+        <section id="tech"
+            class="flex-1 flex flex-col items-center justify-center p-7  shaddow-effect  bg-black text-white">
+            <div class="max-w-5xl mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-12">⚡ Skills</h2>
+                <div class="flex flex-wrap justify-center gap-6 text-lg">
+                    <span class="px-4 py-2 bg-blue-950 rounded-lg shaddow-effect hover-effect">HTML</span>
+                    <span class="px-4 py-2 bg-blue-950 rounded-lg shaddow-effect hover-effect">CSS</span>
+                    <span class="px-4 py-2 bg-blue-950 rounded-lg shaddow-effect hover-effect">JavaScript</span>
+                    <span class="px-4 py-2 bg-blue-950 rounded-lg shaddow-effect hover-effect">React</span>
+                    <span class="px-4 py-2 bg-blue-950 rounded-lg shaddow-effect hover-effect">Tailwind CSS</span>
+                    <span class="px-4 py-2 bg-blue-950 rounded-lg shaddow-effect hover-effect">Python</span>
+                </div>
+            </div>
+        </section>
+        <!-- Technologies / Skills Section -->
+
+
+
+        <!-- Contact Section -->
+        <section id="contact"
+            class="flex-1 flex flex-col items-center justify-center gap-2 p-7  bg-gray-300 text-gray-900">
+            <h2 class="text-3xl font-bold mb-6  bg-gray-300 text-gray-900">📬 Contact Me</h2>
+            <p class="text-lg mb-6">Interested in working together? Let's connect! and build amazing</p>
+            <a href="mailto:your-email@example.com"
+                class="px-6 py-3 bg-cyan-400 text-gray-900 font-semibold rounded-lg shadow-lg hover:bg-cyan-300 transition">
+                Send Email
+            </a>
+        </section>
+        <!-- Contact Section -->
+
+
+
         <!-- Buttons For Section Naviagation -->
         <section class="flex gap-x-6 w-fit p-3.5 m-auto">
-            <button class="p-4 rounded-full text-white bg-[#171111] " onclick="alert('hello left')"><i
+            <button id="left-btn" class="hover-effect p-4 rounded-full text-white bg-[#171111] "><i
                     class="bi bi-caret-left-fill"></i></button>
-            <button class="p-4 rounded-full text-white bg-[#171111] " onclick="alert('hello right')"><i
+            <button id="right-btn" class="hover-effect p-4 rounded-full text-white bg-[#171111] "><i
                     class="bi bi-caret-right-fill"></i></button>
+            <!-- <button onclick="alert('hello')" type="button" disabled>Disabled Button</button> -->
         </section>
         <!-- Buttons For Section Naviagation -->
 
@@ -77,16 +157,83 @@
         <footer class="p-2 text-center  w-full
         bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] 
         text-white shadow-[0_10px_30px_rgba(255,255,255,0.8)]">
-            Copyright © <span id="current-year"></span> Waleed Ahmed
+            Made with 🖤 by Waleed Ahmed Copyright © <span id="current-year"></span>
         </footer>
         <!-- Footer Section -->
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+
         // Logic For Updating Year Dynamically
         const currentDate = new Date();
         const currentYear = currentDate.getFullYear();
         document.querySelector("#current-year").textContent = currentYear;
+
+        // Logic For Updating Skills Dynamically
+        var typed = new Typed("#typing", {
+            strings: ["Web Designer", "Problem Solver", "Frontend Developer"],
+            typeSpeed: 80,       // typing speed
+            backSpeed: 50,       // backspacing speed
+            backDelay: 1500,     // pause before backspacing
+            loop: true           // keep looping
+        });
+
+        // Section IDs in order
+        let sectionArray = ["home", "projects", "tech", "contact"];
+
+        // Get sections
+        let sections = sectionArray.map(id => document.getElementById(id));
+
+        // Hide all except first
+        sections.forEach((sec, i) => sec.style.display = (i === 0) ? "flex" : "none");
+
+        // Buttons
+        let rightBtn = document.querySelector("#right-btn");
+        let leftBtn = document.querySelector("#left-btn");
+
+        let index = 0; // start with first section
+        let sectionLength = sectionArray.length;
+
+        // if (index === 0) {
+        //     leftBtn.setAttribute(disabled, "");
+        // }
+
+        // if (index === sectionLength - 1) {
+        //     rightBtn.setAttribute("disabled", "");
+        // }
+
+        // Function to update UI
+        function updateSections() {
+            sections.forEach((sec, i) => {
+                sec.style.display = (i === index) ? "flex" : "none";
+            });
+
+            // Disable buttons at edges
+            leftBtn.disabled = (index === 0);
+            rightBtn.disabled = (index === sectionLength - 1);
+        }
+
+        // Left button click
+        leftBtn.addEventListener("click", function () {
+            if (index > 0) {
+                index--;
+                updateSections();
+            }
+        });
+
+        // Right button click
+        rightBtn.addEventListener("click", function () {
+            if (index < sectionLength - 1) {
+                index++;
+                updateSections();
+            }
+        });
+
+        // Initial state
+        updateSections();
+
+
     </script>
 </body>
 

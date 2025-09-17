@@ -19,4 +19,5 @@
 
 .hover-effect:hover {
     transform: translateY(-8px);
+    box-shadow: 4px 6px 20px 15px #00d8ff;
 }
