@@ -21,3 +21,7 @@
     transform: translateY(-8px);
     box-shadow: 4px 6px 20px 15px #00d8ff;
 }
+
+.h {
+    height: calc(2/3 * 17%);
+}
